@@ -17,7 +17,7 @@ export default function Home() {
             <div className="flex-auto  bg-veryLightGray">
             </div>
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-50">
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-50 mt-56">
                 <Title />
                 <SearchBar />
                 <ToDoCard />
