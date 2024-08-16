@@ -1,10 +1,10 @@
+import GrandLayout from "./layout/GrandLayout"
+
 function App() {
-
-
   return (
-    <>
-    <h1 className="  text-red-700">Hello</h1>
-    </>
+    <div>
+      <GrandLayout />
+    </div>
   )
 }
 
