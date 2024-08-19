@@ -1,11 +1,24 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdOutlineRadioButtonUnchecked } from "react-icons/md";
+import { useTheme } from "../hooks/useTheme";
 
 const ToDoCard = () => {
+  const { theme } = useTheme();
+
   return (
-    <div className="bg-white text-veryDarkGrayishBlue w-full max-w-lg p-6 rounded-md shadow-md">
+    <div
+      className={`${
+        theme === "light"
+          ? "bg-veryLightGray text-veryDarkGrayishBlue"
+          : "bg-veryDarkGrayishBlueDarker text-veryLightGrayishBlue"
+      } w-full max-w-lg p-6 rounded-md shadow-md`}
+    >
       <ul>
-        <li className="flex items-center mb-5 border-b-[1px] p-[10px]">
+        <li
+          className={`flex items-center mb-5 border-b-[1px] ${
+            theme === "dark" ? "border-b-veryDarkGrayishBlue" : ""
+          }  p-[10px]`}
+        >
           <span className="text-blue-500 mr-5">
             {" "}
             <FaCircleCheck />

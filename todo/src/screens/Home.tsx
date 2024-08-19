@@ -9,7 +9,11 @@ export default function Home() {
   const { theme } = useTheme();
 
   return (
-    <div className="h-screen flex flex-col relative">
+    <div
+      className={`flex flex-col relative ${
+        theme === "light" ? "bg-veryLightGray" : "bg-veryDarkBlue"
+      }`}
+    >
       <div className="flex-1">
         {theme === "dark" ? (
           <img
@@ -25,13 +29,9 @@ export default function Home() {
           />
         )}
       </div>
-      <div
-        className={`flex-auto ${
-          theme === "light" ? "bg-veryLightGray" : "bg-veryDarkBlue"
-        }`}
-      ></div>
+      <div className="flex-auto"></div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-50 mt-56">
+      <div className="flex flex-col items-center mt-[-170px]  mb-14">
         <Title />
         <SearchBar />
         <ToDoCard />
