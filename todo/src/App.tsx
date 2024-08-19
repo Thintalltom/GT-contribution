@@ -1,11 +1,10 @@
-import GrandLayout from "./layout/GrandLayout"
-
+import GrandLayout from "./layout/GrandLayout";
 function App() {
   return (
     <div>
       <GrandLayout />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

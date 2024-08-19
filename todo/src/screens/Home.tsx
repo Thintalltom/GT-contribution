@@ -8,6 +8,22 @@ import { useTheme } from "../hooks/useTheme";
 export default function Home() {
   const { theme } = useTheme();
 
+export default function Home () {
+
+   
+    return (
+        <div className="h-screen flex flex-col relative">
+            <div className="flex-1">
+                <img
+                    src={bgDesktopLight}
+                    alt=""
+                    className="w-full h-full object-cover"
+                />
+            </div>
+            <div className="flex-auto  bg-veryLightGray">
+            </div>
+
+
   return (
     <div
       className={`flex flex-col relative ${
